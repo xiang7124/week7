@@ -1,0 +1,142 @@
+.footer {
+    background: $maincolor;
+    color: #fff;
+    padding: 48px 0 32px 0;
+
+    @include iphone {
+        padding: 24px 0 32px 0;
+    }
+}
+
+.footerLinkDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items:f;
+}
+
+.PageLinkDiv {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 36px;
+
+    @include iphone {
+        display: none;
+    }
+}
+
+.PageLink {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-right: 48px;
+}
+
+.PageLink:last-child {
+    margin-right: 0;
+}
+
+
+
+.AppLink {
+    margin-left: 32px;
+
+    @include pad {
+        margin-left: 16px;
+    }
+
+    @include iphone {
+        margin-left: 8px;
+    }
+
+    img {
+        width: 48px;
+        height: 48px;
+
+        @include pad {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include iphone {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.AppLink:first-child {
+    margin-left: 0;
+}
+
+.footerContact {
+    margin-bottom: 32px;
+
+    @include iphone {
+        margin-bottom: 24px;
+    }
+}
+
+.footerContactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    img {
+        margin-right: 16px;
+
+        @include iphone {
+            width: 20px;
+        }
+    }
+
+    span {
+        font-size: 36px;
+        line-height: 54px;
+
+        @include iphone {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+.footer hr {
+    margin-bottom: 32px;
+
+    @include iphone {
+        margin-bottom: 16px;
+    }
+}
+
+
+.CopyRightDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include iphone {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .CopyRight {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .terms {
+        font-size: 14px;
+        line-height: 21px;
+        color: #fff;
+        margin-left: 48px;
+
+        @include iphone {
+            font-size: 16px;
+            line-height: 24px;
+            display: block;
+            margin-top: 8px;
+            margin-left: 0;
+        }
+    }
+}
